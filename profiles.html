@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/9cd49f9282.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Gotu&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Profiles</title>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1>
+        <a href="index.html"><i class="fas fa-code-branch"></i>Easy Recruit</a>
+      </h1>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <section class="container">
+      <div class="search-container">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+      <h1 class="large text-primary">Developers</h1>
+      <p class="lead">
+        <i class="fas fa-laptop-code"></i> Browse and Connect with Developers
+      </p>
+      <div class="sales-products-filter">
+        <!-- Marks Filter -->
+        <select class="filter-brand">
+          <option value="0" selected>All</option>
+          <option value="auto">C/C++</option>
+          <option value="ss">JavaScript</option>
+          <option value="everyday">React</option>
+        </select>
+        <!-- Verify filter -->
+        <select class="filter-type">
+          <option value="0" selected>Student Status</option>
+          <option value="1">Un-verified</option>
+          <option value="2">verified</option>
+        </select>
+        <button class="filter-btn">Filter</button>
+      </div>
+      <div class="profiles">
+        <div class="profile bg-light">
+          <img
+            src="./img/rui.jpg"
+            alt="Github DP instead of Gravatar"
+            class="round-img"
+            onerror="imgError(this)"
+          />
+
+          <div>
+            <h2>Rohi Rawal.</h2>
+            <p>Developer at Google</p>
+            <p>Sacramento, Ca, USA</p>
+            <a href="profile.html" class="btn btn-primary">View Profile</a>
+            <a href="profile.html" class="btn btn-primary">Verify</a>
+          </div> 
+
+          <ul>
+            <li class="text-primary"><i class="fas fa-check"></i> HTML</li>
+            <li class="text-primary"><i class="fas fa-check"></i> CSS</li>
+            <li class="text-primary">
+              <i class="fas fa-check"></i> JavaScript
+            </li>
+            <li class="text-primary"><i class="fas fa-check"></i> React</li>
+            <li class="text-primary"><i class="fas fa-check"></i> Java</li>
+          </ul>
+        </div>
+
+        <div class="profile bg-light">
+          <img
+            src="https://avatars.githubusercontent.com/Mugilan23"
+            alt="Github DP instead of Gravatar"
+            class="round-img"
+            onerror="imgError(this)"
+          />
+
+          <div>
+            <h2>Mugilan E.S.</h2>
+            <p>Developer at Apple</p>
+            <p>Chennai, TN, India</p>
+            <a href="profile.html" class="btn btn-primary">View Profile</a>
+          </div>
+
+          <ul>
+            <li class="text-primary"><i class="fas fa-check"></i> HTML</li>
+            <li class="text-primary"><i class="fas fa-check"></i> CSS</li>
+            <li class="text-primary">
+              <i class="fas fa-check"></i> JavaScript
+            </li>
+            <li class="text-primary"><i class="fas fa-check"></i> Python</li>
+            <li class="text-primary"><i class="fas fa-check"></i> Java</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
