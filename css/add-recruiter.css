@@ -1,0 +1,147 @@
+html {
+  height: 100%;
+}
+.p-1 {
+  padding: 1rem;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(#141e30, #243b55);
+}
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  position: fixed;
+  min-height: 5vh;
+
+  background-color: #34495e;
+  width: 100%;
+  top: 0;
+
+  opacity: 0.8;
+}
+
+.navbar ul {
+  display: flex;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-right: 5px;
+  list-style-type: none;
+}
+.navbar a {
+  color: #fff;
+  padding: 0px 15px 0px 15px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: rgb(158, 173, 173);
+}
+.navbar bg-dark {
+  color: black;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  padding: 30px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+span {
+  color: white;
+}
+.container h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.container .form-group {
+  position: relative;
+}
+
+.container .form-group input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.container .form-group label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.container .form-group input:focus ~ label,
+.container .form-group input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+.container .form-group input[type="date" i] {
+  color: whitesmoke;
+}
+.container .form-group input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 2px;
+  opacity: 1;
+  filter: invert(0.8);
+}
+
+.container
+  .form-group
+  input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background: transparent;
+  border: 2px solid gray;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 10px;
+  cursor: pointer;
+  letter-spacing: 4px;
+}
+
+.btn:hover {
+  background: #656969;
+  color: #fff;
+}
