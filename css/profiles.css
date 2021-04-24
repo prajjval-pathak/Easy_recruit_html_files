@@ -33,7 +33,8 @@ body {
 }
 
 .text-primary {
-  color: #b88017;
+  color: #ffe45e;
+  font-size: 20px;
 }
 
 .round-img {
@@ -52,7 +53,7 @@ body {
 }
 
 .bg-light {
-  background-color: #455473;
+  background-color: #2e3140;
   color: #333;
   border: #ccc 1px solid;
 }
@@ -71,18 +72,20 @@ body {
   cursor: pointer;
   font-size: 1rem;
   margin-right: 0.5rem;
+  border-radius: 5px;
   outline: none;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 
 .btn.btn-primary {
-  background-color: #b88017;
+  background-color: #455473;
   color: #fff;
 }
 
 .btn.btn-primary:hover {
-  background: #cf901a;
+  background: #ffe45e;
+  color: #2e3140;
 }
 
 .btn.btn-dark {
@@ -184,7 +187,7 @@ body {
   cursor: pointer;
   border-radius: 0;
   font-size: 0.8rem;
-  font-family: "SofiaProLight";
+  font-family: gotu, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -213,15 +216,15 @@ body {
 }
 
 .sales-products-filter .filter-btn {
-  background: #e9ce93;
+  background: black;
   border: 1px solid #4f4f55;
-  color: black;
-  font-family: "SofiaProLight";
+  color: #e9ce93;
+  font-family: gotu, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 0.8rem;
   cursor: pointer;
-  padding: 16px 20px;
+  padding: 11px 20px;
   display: inline-block;
   margin-left: 20px;
 }
@@ -315,8 +318,7 @@ img {
   background-color: #34495e;
   width: 100%;
   top: 0;
-
-  opacity: 0.8;
+  font-size: 25px;
 }
 
 .navbar ul {
@@ -327,14 +329,14 @@ img {
   list-style-type: none;
 }
 .navbar a {
-  color: rgb(0, 0, 0);
-  padding: 0px 15px 0px 15px;
+  color: #fff;
+  padding: 0px 15px 0px;
   margin: 0px;
   text-decoration: none;
 }
 
 .navbar a:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(158, 173, 173);
 }
 .navbar bg-dark {
   color: black;
@@ -356,9 +358,12 @@ img {
 }
 .profile h2 {
   color: white;
+  font-size: 32px;
+  font-weight: bold;
 }
 .profile p {
   color: white;
+  margin-bottom: 10px;
 }
 @media (max-width: 700px) {
   .hide-sm {
